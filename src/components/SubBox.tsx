@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
 
-type states = "inactive" |"clicked"
+import { useState } from "react";
 
 interface subBox {
     indexVal:number,
@@ -10,7 +9,7 @@ interface subBox {
 }
 
 function SubBox({indexVal, seq,updateSeq,reply}:subBox) {
-    const [status,setStatus] = useState(0);
+    const [status,setStatus] = useState<number>(0);
 
 
     const handleClick = () =>{
