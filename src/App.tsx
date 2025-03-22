@@ -42,7 +42,7 @@ function App() {
   console.log(seq)
   return (
     <section className='w-screen flex flex-col gap-y-4 justify-center items-center h-screen bg-white p-40'>
-      <h2 className='text-neutral-600 text-lg font-bold'>3x3 matric color changer</h2>
+      <h2 className='text-neutral-600 text-lg font-bold'>3x3 matrix color changer</h2>
       <div className="grid w-full h-full grid-cols-3 grid-row-3 gap-2 ">
         {matrixBox.map((item) => (
           <Childbox key={item} seq={seq}  reply = {reply}  updateSeq={setseq} indexVal={item} />
