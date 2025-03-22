@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './App.css'
-import SubBox from './components/subBox';
+import { Childbox } from './components/Childbox';
 
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
       <h2 className='text-neutral-600 text-lg font-bold'>3x3 matric color changer</h2>
       <div className="grid w-full h-full grid-cols-3 grid-row-3 gap-2 ">
         {matrixBox.map((item) => (
-          <SubBox key={item} seq={seq}  reply = {reply}  updateSeq={setseq} indexVal={item} />
+          <Childbox key={item} seq={seq}  reply = {reply}  updateSeq={setseq} indexVal={item} />
         ))}
       </div>
       <div className='w-full h-12'>

@@ -8,7 +8,7 @@ interface subBox {
     seq:number[],
 }
 
-function SubBox({indexVal, seq,updateSeq,reply}:subBox) {
+function Childbox({indexVal, seq,updateSeq,reply}:subBox) {
     const [status,setStatus] = useState<number>(0);
 
 
@@ -29,4 +29,4 @@ function SubBox({indexVal, seq,updateSeq,reply}:subBox) {
   )
 }
 
-export default SubBox
+export {Childbox}
